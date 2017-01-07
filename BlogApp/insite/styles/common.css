@@ -1,0 +1,23 @@
+.header {
+	background: #000;
+	color: #fff;
+	padding: 15px 25px;
+	min-height: 18px;
+}
+.header .left-container {
+	float: left;
+}
+.header .right-container {
+	float: right;
+}
+.header .right-container .menu-item {
+	float: left;
+	padding-right: 30px;
+	cursor: pointer;
+	color: #fff;
+}
+a {
+	text-decoration: none;
+	color: #fff;
+	cursor: pointer;
+}

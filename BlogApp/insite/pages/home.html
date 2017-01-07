@@ -1,0 +1,99 @@
+<!-- Home page HTML which lists all the blog -->
+
+<!-- Doctype tells the browser that it's a HTML5 file -->
+<!DOCTYPE html>
+<!-- HTML tag - All the HTML elements must be included inside this tag -->
+<html>
+<!-- Head element provides the metadata about the document.
+It also includes the documents styles sheet and scripts -->
+<head>
+    <!-- 	The HTML <title> element defines the title of the document, shown in a browser's title bar or on the page's tab. It can only contain text, and any contained tags are ignored. -->
+	<title>BlogApp</title>
+	<!-- Include external stylesheet
+	     1. The HTML <link> element specifies relationships between the current document and an external  
+	        resource
+	     2. href - This attribute specifies the URL of the linked resource.
+	     2. rel - This attribute names a relationship of the linked document to the current document-->
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../styles/home.css" />
+	<link rel="stylesheet" type="text/css" href="../styles/common.css" />
+
+	<!-- The HTML <script> element is used to embed or reference an executable script. 
+		1. This attribute specifies the URI of an external script-->
+
+	<!-- Below script tags includes the JQuery library using the CDN link -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+	<script type="text/javascript" src="../scripts/home.js"></script>
+	<script type="text/javascript" src="../scripts/common.js"></script>
+	<script type="text/javascript" src="../scripts/blogData.js"></script>
+	<script type="text/javascript" src="../scripts/common.js"></script>
+</head>
+<!-- Body tag includes all the HTML elements which are displayed on the browser page -->
+<body>
+	<!-- Includes all the contents of the page -->
+	<div class="main-container">
+		<!-- Displays the page header -->
+		<div class="header">
+			<!-- Displays the left hand side of the header content - BlOGAPP-->
+			<div class="left-container" class="menu-item" >
+				<!-- Anchor <a> tags are used to link the element with the other page using Hyperlinks -->
+				<a href="../pages/home.html"/>
+					<div class="__title " id="blog-app">
+						BLOG APP
+					</div>
+				</a>
+			</div>
+			<!-- Displays the right hand side of the header container - LOGIN -->
+			<div class="right-container">
+				<div class="menu-item login" id="login-button" class="header-text">
+					LOGIN
+				</div>
+			</div>
+		</div>
+		<!-- Start of div to display all the blog. Blogs will be added dynamically inside this div -->
+		<div id="all-blog"></div>
+		<!-- End of div to display all the blog -->
+
+		<!-- Start of div to display login block -->
+		<!-- Transparetn Overlay container -->
+		<div id="myModal" class="overlay-container">
+			<!-- Login block which are displayed on click of login button -->
+			<div class="login-container">
+				<!-- X - icon to close the login Modal or Pop up -->
+				<span class="close">&times;</span>
+				<!-- Element contains all the login elements -->
+				<div class="login-wrap">
+					<!-- Login header - Login -->
+					<div class="login-heading">
+						<div class="__text">LOGIN</div>
+					</div>
+					<!-- Login body where all the elements are present -->
+					<div class="login-body">
+						<div class="email login-element">
+							<label for="email-id">Email Id</label>
+							<!-- Input tag to take email as input  -->
+							<input type="email" id="email-id">
+						</div>
+						<div class="password login-element">
+							<label for="password">Password</label>
+							<!-- Input tag to take password as input -->
+							<input type="password" id="password">
+						</div>
+						<!-- Display error message if it occurs -->
+						<div class="error-message" id="login-error">		
+						</div>
+						<div class="submit-action login-action" id="login-submit">LOGIN</div>
+						<div id="registration-form-div">
+							Not a member yet? 
+							<span id="sign-up-button" class="submit-action">
+								Sign up Now!
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+</div>
+</body>
+</html>

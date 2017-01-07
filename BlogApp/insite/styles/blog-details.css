@@ -1,0 +1,57 @@
+body {
+	font-family: Roboto;
+
+}
+
+.blog-details-container {
+	width: 80%;
+    border: 1px solid #dfe3e7;
+    background: #fff;
+    position: absolute;
+    top: 18%;
+    left: 10%;
+	box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1), 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin-bottom: 40px;
+}
+.bd-heading {
+	background: transparent;
+	font-family: pacifico;
+	min-height: 90px;
+	color: #673ab7;
+	padding: 15px 25px;
+	border-bottom: 1px solid #dfe3e7;
+}
+.bd-heading .bd-title {
+	font-size: 30px;
+	width: 100%;
+	text-align: center;
+	text-transform: lowercase;
+	letter-spacing: 1px;
+}
+.bd-heading .bd-author {
+	float: right;
+	letter-spacing: 2px;
+	padding-top: 15px;
+}
+.bd-heading .bd-date {
+	float: right;
+	padding-top: 15px;
+	padding-right: 20px;
+}
+.bd-contents {
+	color: #666;
+	padding: 10px;
+	line-height: 22px;
+	margin: 20px;
+}
+.blog-addons {
+	width: 200px;
+	background: #673ab7;
+	margin: auto;
+	color: #fff;
+	cursor: pointer;
+	text-align: center;
+	padding: 10px;
+	border-radius: 4px;
+	margin-bottom: 20px;
+}

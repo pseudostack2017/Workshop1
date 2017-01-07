@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../styles/home.css" />
+	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../styles/blog-details.css" />
+	<link rel="stylesheet" type="text/css" href="../styles/common.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="../scripts/blogData.js"></script>
+	<script type="text/javascript" src="../scripts/blog-details.js"></script>
+	<script type="text/javascript" src="../scripts/common.js"></script>
+</head>
+<body>
+	<div class="main-container">
+		<!-- Blog details page header -->
+		<div class="header">
+			<div class="left-container" class="menu-item" >
+				<a href="../pages/home.html"/>
+					<div class="__title " id="blog-app">
+						BLOG APP
+					</div>
+				</a>
+			</div>
+			<div class="right-container">
+				<div class="menu-item login" id="login-button" class="header-text">
+					LOGIN
+				</div>	
+			</div>
+		</div>
+
+		<!-- Blog details container which get populated dynamically -->
+		<div class="blog-details-container">
+			<div class="bd-heading">
+				<!-- Displays blog  title -->
+				<div class="bd-title"></div>
+				<!-- Displays the blog author -->
+				<div class="bd-author">Written by 
+					<span id="author-name"></span>
+				</div>
+				<!-- Displays the blog created date -->
+				<div class="bd-date"></div>
+			</div>
+
+			<!-- Displays the blog contents -->
+			<div class="bd-contents">
+				<div class="__text"></div>
+			</div>		
+		</div>
+
+		<!-- Login pop up HTML -->
+		<div id="myModal" class="overlay-container">
+			<div class="login-container">
+
+				<span class="close">&times;</span>
+
+				<div class="login-wrap">
+
+					<div class="login-heading">
+						<div class="__text">LOGIN
+						</div>
+					</div>
+
+					<div class="login-body">
+						<div class="email login-element">
+							<label for="email-id">Email Id</label>
+							<input type="email" id="email-id">
+						</div>
+
+						<div class="password login-element">
+							<label for="password">Password</label>
+							<input type="password" id="password">
+						</div>
+
+						<div class="error-message" id="login-error"></div>
+
+						<div class="submit-action login-action" id="login-submit">LOGIN</div>
+
+						<div id="registration-form-div">
+							Not a member yet? 
+							<span id="sign-up-button" class="submit-action">
+								Sign up Now!
+							</span>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

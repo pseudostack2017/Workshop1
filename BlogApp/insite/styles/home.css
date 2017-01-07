@@ -1,0 +1,168 @@
+body {
+	font-family: Roboto;
+}
+.main-container {
+	width: 100%;
+	background-color: #f2f2f2;
+	max-height: 1300px;
+	overflow-y: scroll;
+}
+#all-blog, #all-user-blog {
+	width: 100%;
+	margin-left: 15px;
+}
+.blog-node {
+	box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1), 0 4px 8px 0 rgba(0,0,0,0.2);
+	margin-top: 40px;
+	width: 23%;
+	float: left;
+	margin-right: 25px;
+}
+.blog-wrap {
+	background: #fff;
+	border: 1px solid #dfe3e7;
+	min-height: 220px;
+	padding: 10px 20px;
+	color: #333;
+}
+.blog-wrap .blog-heading {
+	border-bottom: 1px solid #dfe3e7;
+	padding-bottom: 15px;
+	line-height: 24px;
+}
+.blog-title {
+	color: #000;
+	font-size: 16px;
+	cursor: pointer;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	max-height: 25px;
+	white-space: nowrap;
+}
+.blog-author {
+	color: #999;
+	font-size: 12px;
+}
+.blog-wrap .blog-contents {
+	padding-top: 10px;
+	font-size: 14px;
+	line-height: 20px;
+	height: 220px;
+	overflow: hidden;
+}
+.blog-addons {
+	background-color: #dfe3e7;
+	height: 25px;
+	font-size: 12px;
+	color: #666;
+	padding: 10px 15px;
+	border-top: 1px solid #ccc;
+}
+.blog-addons .__date {
+	float: left;
+}
+.blog-addons .__likes {
+	float: right;
+	float: right;
+	background: #673ab7;
+	color: #fff;
+	padding: 6px 10px;
+	border-radius: 4px;
+	box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1), 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.blog-addons .like-counter {
+	border-right: 1px solid #fff;
+	padding-right: 5px;
+}
+.blog-addons .like-action-element {
+	padding-left: 5px;
+	cursor: pointer;
+}
+.image-container {
+	width: 100%;
+	height: 250px;
+}
+.image-container img {
+	width: 100%;
+	height: 245px;
+}
+
+/* CSS FOR OVERLAY */
+.overlay-container {
+	display: none; 
+	position: fixed; 
+	z-index: 1;
+	padding-top: 100px;
+	left: 0;
+	top: 0;
+	width: 100%; 
+	height: 100%; 
+	overflow: auto; 
+	background-color: rgb(0,0,0); 
+	background-color: rgba(0,0,0,0.4);
+}
+/* The Close Button in Login Popup */
+.close {
+	color: #fff;
+	float: right;
+	font-size: 28px;
+	padding-right: 15px;
+	cursor: pointer;
+}
+/* CSS FOR LOGIN */
+.login-container {
+	width: 400px;
+	background: #f2f2f2;
+	color: #333;
+	top: 25%;
+	left: 35%;
+	position: absolute;
+}
+.login-container .login-heading {
+	background: #000;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 10px;
+}
+.login-container .login-body {
+	padding: 25px;
+}
+.login-container .login-body .login-element {
+	min-height: 60px;
+	width: 100%;
+}
+.login-container .login-body .login-element label {
+	display: inline-block;
+	width: 90px;
+}
+.login-container .login-body .login-element input {
+	border: 1px solid #666;
+	padding: 6px 10px;
+	width: 230px;
+	background: #f2f2f2;
+	outline: 0;
+}
+.login-container .submit-action {
+	width: 80px;
+	padding: 10px;
+	background: #673ab7;
+	color: #fff;
+	text-align: center;
+	margin: auto;
+	cursor: pointer;
+}
+#logout-button, #sign-up-button, #dashboard, #dashboard, #blog-app{
+	cursor: pointer;
+	color: #fff;
+	text-decoration:none;
+}
+
+#registration-form-div{
+	padding-left: 50px;
+	padding-top: 20px;
+}
+
+#register-button{
+	margin-left: 144px;
+}
